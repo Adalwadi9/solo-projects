@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-image: url("shoes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+img {
+max-width:60%;
+max-height: 50%;
+
+	
+}
+ 
+
+ 
+
+ 
+
+
+.container {
+  flex: 1; 
+}
+
+ 
+
+ 
+
+ 
+
+  
+  header {
+    background-color:black ;
+    color: white;
+    padding: 10px;
+ 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 20px;
+    margin: 90px;
+
+ 
+
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+ .active:hover {
+background: rebeccapurple;
+border-radius: 3px;
+ }
+
+ 
+
+ 
+
+.photodist {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color:white;
+  padding: 10px;
+}
+
+ 
+
+.photodist > div {
+  background-color: white;
+  text-align:center;
+  padding: 15px 0;
+  font-size: 20px;
+}
+ 
+.menu {
+  grid-row-start: 1;
+ grid-row-end: 4;
+} 

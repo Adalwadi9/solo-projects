@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group 2 Online Shoe Store</title>
+<link rel="stylesheet" href="project.css">
+<style>
+    /* Hide the dropdown content by default */
+    .dropdown-content {
+      display: none;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Online Shoe Store</h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="subnav">
+          <button class="subnavbtn">Products <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+           
+            <a href="products_sandals.html">Sandals</a>
+            <a href="product_crocs.html">Crocs</a>
+            <a href="product_hiking.html">Hiking</a>
+            <a href="product_sneakers.html">Basketball</a>
+            <a href="product_cleats.html">Cleats</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+<div class="container">
+<section class="hero">
+<h2>Welcome to Group 2 Online Shoe Store</h2>
+<p>Find your perfect pair of shoes for every occasion.</p>
+<p>ON SALE!!! CLICK SHOP NOW!!!</p>
+<a href="products.html" class="btn">Shop Now</a>
+</section>
+ 
+      <section class="featured-products">
+<!-- Add featured products here -->
+</section>
+</div>
+</main>
+ 
+  <footer>
+<p>&copy; 2023 Group 2 Online Shoe Store. All rights reserved.(Paul & Gerladine)</p>
+</footer>
+ 
+  <script>
+    function toggleDropdown() {
+      var dropdownMenu = document.getElementById("dropdownMenu");
+      if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+      } else {
+        dropdownMenu.style.display = "block";
+      }
+    }
+</script>
+</body>
+</html>

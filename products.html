@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 2 Online Shoe Store</title>
+  <link rel="stylesheet" href="project.css">
+  
+  
+</head>
+<header>
+  <h1>Online Shoe Store</h1>
+  <nav>
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+    
+    
+
+
+
+
+<div class="photodist">
+  
+  
+ 
+    <div class ="menu1">
+      
+      
+      
+      <!-- put first left image and description here--> 
+    <img src="pictures/ch1.jpg" height="300" width="250" alt="test_blue1"/>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="pictures/ch2.jpg" alt="Slide 1"></div>
+          <div class="slide"><img src="pictures/ch3.jpg" alt="Slide 2"></div>
+          <div class="slide"><img src="pictures/ch4.jpg" alt="Slide 3"></div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+     <p>50% OFF!!!</p>
+    <p>Cole Haan Sneakers<!--product name goes-->
+      
+    <dl>
+  <dt>Order Number-3565768</dt><!--order number-->
+  <dd>Color - Brown</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>It a great walking shoes, with lot of padding </dt>
+</dl></p>
+    </div>
+    
+    
+    <div class ="menu2">
+      
+     <!-- put first middle image and description here-->
+     <img src="pictures/bs2.jpg" height="300" width="250" alt="test_blue1">
+     <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="pictures/bs3.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="pictures/bs1.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="pictures/bs4.jpg" alt="Slide 3"></div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+       <p>Men's bahama II Taupe<!--product name goes-->
+    <dl>
+  <dt>Order Number-3565781</dt><!--order number-->
+  <dd>Color - Gray</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>Relaxed, natural hemp uppers</dt>
+</dl></p>
+      
+    </div>
+    
+    <div class ="menu3">
+      
+     <!-- put first right image and description here-->
+    <img src="pictures/fb1.jpg" height="300" width="250" alt="test_blue1">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="pictures/fb2.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="pictures/fb3.jpg" alt="Slide 2"></div>
+        
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+     <p>Men Soft Formal Oxfords<!--product name goes-->
+    <dl>
+  <dt>Order Number-3565765</dt><!--order number-->
+  <dd>Color - Black</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>Perfect for business, work or casual</dt>
+</dl></p>
+    </div>
+      <div class ="menu1">
+      <!-- put first left image and description here--> 
+    <img src="pictures/lf1.jpg"height="300" width="250"  alt="test_blue1">
+    
+        <!-- Add more slides as needed -->
+      
+   
+    <p>Stich Detail Horsebit Loafers<!--product name goes-->
+    <dl>
+  <dt>Order Number-3565774</dt><!--order number-->
+  <dd>Color - Brown</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>Collar Plain Embellished Men Shoes  </dt>
+</dl></p>
+    </div>
+    
+    <div class ="menu2">
+     <!-- put first middle image and description here-->
+     <img src="pictures/rs1.jpg"height="300" width="250"  alt="test_blue1">
+       <p>Men's UA HOVR Turbulance<!--product name goes-->
+    <dl>
+  <dt>Order Number-3565777</dt><!--order number-->
+  <dd>Color - Black-Green</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>Best for daily training</dt>
+</dl></p>
+      
+    </div>
+    
+    <div class ="menu3">
+     <!-- put first right image and description here-->
+    <img src="pictures/cr1.jpg" height="300" width="250" alt="test_blue1">
+     <p>Mega Crush Clog<!--product name goes-->
+    <dl>
+  <dt>Order Number-3565741</dt><!--order number-->
+  <dd>Color - Black or White</dd><!--color-->
+  <dd>Available in sizes 6-14 </dd><!--add a short description about why to buy the shoe--><dt>Eye-catching, backstrap, lightweight </dt>
+</dl></p>
+    </div>
+    <a href="index.html">Home Page</a>
+    <!--lightbox to show larger versions of the shoe images when clicked:-->
+    <script>
+      const overlay = document.createElement('div');
+      overlay.id = 'overlay';
+      document.body.appendChild(overlay);
+    
+      const images = document.querySelectorAll('.photodist img');
+      images.forEach((img) => {
+        img.addEventListener('click', () => {
+          const imgSrc = img.getAttribute('src');
+          overlay.innerHTML = `<img src="${imgSrc}" alt="Larger Image">`;
+          overlay.classList.add('open');
+        });
+      });
+    
+      overlay.addEventListener('click', () => {
+        overlay.classList.remove('open');
+      });
+    </script>
+    
+    <style>
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+    
+      #overlay.open {
+        display: flex;
+      }
+    
+      #overlay img {
+        max-width: 80%;
+        max-height: 80%;
+      }
+    </style>
+      <script src="slider.js"></script>
+    
+    
+    
+    
+      
+    
+</body>
+
+</html>
