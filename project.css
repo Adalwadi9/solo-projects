@@ -38,8 +38,8 @@ body {
     color: white;
     text-decoration: none;
   }
-  nav ul li a:hover{
-  color: red
+  nav ul li a:hover {
+  color: red;
   }
   .hero {
     text-align: center;
